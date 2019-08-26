@@ -35,6 +35,11 @@ ROBOTSTXT_OBEY = False
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
 
+MYSQL_HOST = '127.0.0.1'
+MYSQL_DBNAME = 'homeDB'
+MYSQL_USER = 'cqiu003'
+MYSQL_PASSWD = 'nishengri'
+
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
@@ -64,9 +69,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'zumper_spider.pipelines.ZumperSpiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'zumper_spider.pipelines.ZumperSpiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

@@ -99,7 +99,7 @@ class ZumperSpider(Spider):
             item['longitude'] = script_content['geo']['longitude']
             item['streetaddr'] = str(script_content['address']['streetAddress'])
             item['city'] = str(script_content['address']['addressLocality'])
-            item['states'] = str(script_content['address']['addressRegion'])
+            item['state'] = str(script_content['address']['addressRegion'])
             item['zipcode'] = int(script_content['address']['postalCode'])
             item['country'] = 'Untied States'
 

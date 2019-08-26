@@ -34,7 +34,7 @@ class ZumperSpiderItem(scrapy.Item):
     longitude = scrapy.Field()
     streetaddr = scrapy.Field()
     city = scrapy.Field()
-    states = scrapy.Field()
+    state = scrapy.Field()
     zipcode = scrapy.Field()
 
     size = scrapy.Field() ###!!!###
